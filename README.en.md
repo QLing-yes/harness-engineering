@@ -111,7 +111,7 @@ harness-engineering/
 ├── thinking/              # Phase 2: Independent analysis (6 articles)
 ├── practice/              # Phase 3: Hands-on experiments (1 Ralph Demo)
 ├── feedback/              # Phase 4: Lessons learned (1 article)
-├── works/                 # Phase 5: Shareable outputs (11 translations)
+├── works/                 # Phase 5: Shareable outputs (11 translations + 1 original)
 ├── prompts/               # Validated prompts collection
 └── references/            # External resource index (18 articles with deep summaries)
 ```
@@ -124,7 +124,7 @@ Each subdirectory has its own `AGENTS.md` explaining its purpose and conventions
 - [x] **Phase 2: Form your own opinions** — 6 independent analyses (ongoing)
 - [x] **Phase 3: Pick a small project to practice** — Ralph Demo completed (321s, $0.31)
 - [x] **Phase 4: Record feedback & iterations** — 1 article (ongoing)
-- [x] **Phase 5: Produce shareable work** — 11 professional translations
+- [x] **Phase 5: Produce shareable work** — 11 professional translations + 1 original synthesis
 
 ## 📚 Research Library
 

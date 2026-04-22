@@ -110,7 +110,7 @@ harness-engineering/
 ├── thinking/              # Phase 2：独立思考与质疑（6 篇）
 ├── practice/              # Phase 3：小项目实验（1 个 Ralph Demo）
 ├── feedback/              # Phase 4：踩坑与迭代心得（1 篇）
-├── works/                 # Phase 5：可展示的作品（11 篇翻译）
+├── works/                 # Phase 5：可展示的作品（11 篇翻译 + 1 篇原创）
 ├── prompts/               # 验证有效的提示词积累
 └── references/            # 外部资源索引（18 篇文章深度摘要）
 ```
@@ -123,7 +123,7 @@ harness-engineering/
 - [x] **Phase 2：形成自己的观点** — 6 篇独立思考（持续中）
 - [x] **Phase 3：选一个小项目实践** — Ralph Demo 完成（321 秒，$0.31）
 - [x] **Phase 4：记录反馈迭代** — 1 篇（持续中）
-- [x] **Phase 5：输出可展示的作品** — 11 篇专业翻译
+- [x] **Phase 5：输出可展示的作品** — 11 篇专业翻译 + 1 篇原创综合分析
 
 ## 📚 研究资料库
 
@@ -196,7 +196,7 @@ harness-engineering/
 
 ## 🛠️ 开发须知
 
-仓库自带一致性检查脚本 `scripts/check-consistency.sh`，守护数量类漂移（文章数、各目录篇数、下游引用同步）。
+仓库自带一致性检查脚本 `scripts/check-consistency.sh`，守护数量类漂移：`references/articles.md` 文章数、其下游 4 处引用（README × 2 badges、`prompts/deep-research-tracker.md` 头部、`references/AGENTS.md` 概览），以及 `concepts/` / `thinking/` / `feedback/` 三个目录的篇数。`works/` 目前不在覆盖范围（结构仍在演化）。
 
 **首次 clone 后启用 pre-commit hook：**
 
@@ -204,7 +204,7 @@ harness-engineering/
 git config core.hooksPath .githooks
 ```
 
-启用后，每次 commit 涉及 README / articles.md / 各目录文章数 时会自动跑检查；不涉及则不打扰。
+启用后，每次 commit 涉及 README、`references/articles.md`、`references/AGENTS.md`、`prompts/deep-research-tracker.md`、或 `concepts/` / `thinking/` / `feedback/` 中的 `*.md` 时会自动跑检查；不涉及则不打扰。
 
 **手动跑：** `bash scripts/check-consistency.sh`
 
