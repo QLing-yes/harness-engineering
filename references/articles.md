@@ -10,7 +10,7 @@
 > **下游引用都是本文的冗余缓存：** 根 `README.md` / `README.en.md` 的 badge、`prompts/deep-research-tracker.md` 的去重清单、`references/AGENTS.md` 的概览表。
 > 新增/删除文章时，必须**同一次提交**更新本文 + 所有下游缓存。
 >
-> 当前规模：**18 篇文章**（脉络一 15 + 脉络二 2 + 脉络三 1）+ **1 项已跟踪产品**（不计入文章数）。最近一次同步：2026-04-21。
+> 当前规模：**19 篇文章**（脉络一 16 + 脉络二 2 + 脉络三 1）+ **1 项已跟踪产品**（不计入文章数）。最近一次同步：2026-04-28。
 
 ## 脉络一：AI 时代的 Harness Engineering（大模型护栏与认知工程）
 
@@ -431,20 +431,36 @@
   - Deep Agents 框架支持生产级持续学习
 - **与其他文章关联：** Meta-Harness 论文的 harness 层自动化学习的框架化阐述；Fowler #9 反馈飞轮在智能体层面的体现
 
-> #16 原 Chachamaru127 / claude-code-harness 条目已迁至本文末尾的"已跟踪产品 / 项目"段落（不计入文章数）。
+### 16. OpenAI 官方 — 任务跟踪器作为控制平面（Symphony）
+
+- **标题：** An open-source spec for Codex orchestration: Symphony
+- **链接：** [openai.com](https://openai.com/index/open-source-codex-orchestration-symphony/)
+- **翻译：** [works/openai-codex-symphony-translation.md](../works/openai-codex-symphony-translation.md)
+- **作者：** Alex Kotliarskyi, Victor Zhu, Zach Brock | **日期：** 2026-03-08
+- **核心：** 把 Linear 这类问题跟踪器变成智能体编排的控制平面——每个打开的 ticket 映射一个智能体工作区，Symphony 保证未完成任务始终有智能体在跑。Symphony 本体只是一份 `SPEC.md`+`WORKFLOW.md`，参考实现用 Elixir，作者鼓励使用者把 spec 交给自己的编码智能体生成本地实现。
+- **关键洞察：**
+  - **从交互式会话到 ticket 级编排**：人类瓶颈不在写代码，而在管理 3-5 个并发 Codex 会话的上下文切换；把 issue tracker 当状态机后，瓶颈转移到智能体的目标空间
+  - **目标 vs 状态转换**：早期把智能体当状态机里的刚性节点不奏效；最终转向"给目标 + 工具 + 上下文，让它自己推理"
+  - **代码免费 → 按语言优势选语言**：参考实现用 Elixir 是因为其并发能力强；同一份 SPEC.md 用 TS/Go/Rust/Java/Python 都能实现成功，多语言实现反过来打磨规范本身
+  - **探索成本接近零**：PM/设计师可直接提交 ticket 拿到带演示视频的 review packet，扩大了"谁能发起工程工作"的边界
+  - **数据点**：部分团队前三周已落地 PR 数量 +500%；发布后 4 月 23 日仓库 15K+ stars
+- **与其他文章关联：** OpenAI 原文 #1 的"map not manual"在 SPEC.md 模式下的极致——map 不仅给智能体看，也给社区使用者作为构建模板；HumanLayer #5 的"AGENTS.md 杠杆"在工作流层面的扩展（`WORKFLOW.md` 显式化原本隐式的人类流程）；与 thinking 洞见 7 的"技术栈收敛"形成反例
+- **实施参考：** [openai/symphony](https://github.com/openai/symphony) | [SPEC.md](https://github.com/openai/symphony/blob/main/SPEC.md)
+
+> 注：Chachamaru127 / claude-code-harness 早期曾占据 #16 文章位，现已迁至本文末尾的"已跟踪产品 / 项目"段落（不计入文章数）。
 
 ---
 
 ## 脉络二：云原生时代的 Harness.io（交付与平台工程）
 
-### 16. Harness.io 官方 — 全局架构
+### 17. Harness.io 官方 — 全局架构
 
 - **标题：** Understanding CI/CD Platforms: The backbone of modern DevOps
 - **链接：** [harness.io](https://www.harness.io/blog/understanding-ci-cd-platforms-the-backbone-of-modern-devops)
 - **核心：** 标准 CI/CD 平台介绍。8 大组件：SCM → Build → Test → Code Quality → Security Scan → Artifact → Deploy → Monitor
 - **Harness 差异化：** 统一管线、Test Intelligence 智能测试、最少脚本、Policy-as-Code 治理
 
-### 17. Google Cloud Architecture — 前沿场景结合
+### 18. Google Cloud Architecture — 前沿场景结合
 
 - **标题：** Harness CI/CD pipeline for RAG applications
 - **链接：** [docs.cloud.google.com](https://docs.cloud.google.com/architecture/partners/harness-cicd-pipeline-for-rag-app)
@@ -457,7 +473,7 @@
 
 ## 脉络三：效率悖论与能力进化
 
-### 18. YDD / Miss-you — 效率悖论的系统性拆解
+### 19. YDD / Miss-you — 效率悖论的系统性拆解
 
 - **标题：** 为什么 AI 写代码更快但交付没变，以及我怎么把它扳回来的
 - **链接：** [yousali.com](https://yousali.com/posts/20260303-ai-coding-efficiency-to-evolution/)

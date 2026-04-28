@@ -46,6 +46,19 @@
 
 当编码从手写转向引导生成时，开发者偏好作为选型标准的重要性下降。组织可能基于 harness 的质量和"AI 友好度"来选择技术栈 → 技术栈趋向收敛。
 
+### OpenAI Symphony — 吞吐量从 PR 级跃迁到 ticket 级
+
+Symphony（[references/articles.md #16](../references/articles.md)）把吞吐量哲学**抽象到更高一层**：从"PR 流转速度"到"ticket 流转速度"。差别在哪——
+
+| 层级 | 单位 | 人类介入点 |
+|------|------|----------|
+| OpenAI 原文 | 1 PR | 提示+审查 |
+| Symphony | 1 ticket（可产出 0..N 个 PR） | 提交 ticket + 审查 review packet |
+
+数据点：部分团队前三周已落地 PR 数量 **+500%**。原因不是 PR 写得更快，而是**人类不再为每个 PR 付注意力成本**——一个 ticket 内的多次重试、PR 拆分、CI 重跑全由编排器代劳。
+
+**前提对齐：** Symphony 的工作方式仍然依赖原文要求的所有"背压机制"（CI、lint、测试），并加上"可推送到 ticket 状态机的工作流"（WORKFLOW.md）。原文的吞吐量哲学是**必要条件**，Symphony 是它的**充分应用**。
+
 ## 关键洞察
 
 这个概念的本质是一个**经济学问题**：

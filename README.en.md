@@ -1,8 +1,8 @@
 [中文](README.md) | English
 
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
-![Articles](https://img.shields.io/badge/articles-18-green)
-![Translations](https://img.shields.io/badge/translations-11-orange)
+![Articles](https://img.shields.io/badge/articles-19-green)
+![Translations](https://img.shields.io/badge/translations-12-orange)
 
 # Harness Engineering Study Guide
 
@@ -99,7 +99,7 @@ harness-engineering/
 ├── README.en.md           ← You are here
 ├── AGENTS.md              ← Repo navigation entry (for agents)
 │
-├── concepts/              # Phase 1: Concept notes (7 articles)
+├── concepts/              # Phase 1: Concept notes (8 articles)
 │   ├── 00-overview.md     #   Overview of all six concepts
 │   ├── 01-repo-as-...     #   Repo as source of truth
 │   ├── 02-mechanical-...  #   Mechanical enforcement
@@ -113,14 +113,14 @@ harness-engineering/
 ├── feedback/              # Phase 4: Lessons learned (1 article)
 ├── works/                 # Phase 5: Shareable outputs (11 translations + 1 original)
 ├── prompts/               # Validated prompts collection
-└── references/            # External resource index (18 articles with deep summaries)
+└── references/            # External resource index (19 articles with deep summaries)
 ```
 
 Each subdirectory has its own `AGENTS.md` explaining its purpose and conventions — a direct practice of the "progressive disclosure" principle from the original article.
 
 ## 🚀 Learning Path
 
-- [x] **Phase 1: Understand core concepts** — 7 concept notes covering OpenAI's six concepts + Fowler's control-theory extension
+- [x] **Phase 1: Understand core concepts** — 8 concept notes covering OpenAI's six concepts + Fowler's control-theory extension + Symphony's spec-as-product
 - [x] **Phase 2: Form your own opinions** — 6 independent analyses (ongoing)
 - [x] **Phase 3: Pick a small project to practice** — Ralph Demo completed (321s, $0.31)
 - [x] **Phase 4: Record feedback & iterations** — 1 article (ongoing)
@@ -128,11 +128,11 @@ Each subdirectory has its own `AGENTS.md` explaining its purpose and conventions
 
 ## 📚 Research Library
 
-15 core articles + 3 extended readings across three knowledge tracks:
+16 core articles + 3 extended readings across three knowledge tracks:
 
 | Track | Coverage | Perspectives |
 |-------|----------|-------------|
-| AI-Era Harness Engineering | 15 articles | OpenAI → Fowler → Anthropic → LangChain → Stanford |
+| AI-Era Harness Engineering | 16 articles | OpenAI → Fowler → Anthropic → LangChain → Stanford |
 | Cloud-Native Harness.io | 3 articles | CI/CD platform architecture (same name, different meaning) |
 | Extended Reading | 3 articles | Mitchell Hashimoto, Context Engineering, Human-Agent collaboration |
 
@@ -141,7 +141,7 @@ See [references/articles.md](references/articles.md) — each article includes c
 ## 📖 Translations
 
 <details>
-<summary><b>11 Chinese translations of key articles</b> (click to expand)</summary>
+<summary><b>12 Chinese translations of key articles</b> (click to expand)</summary>
 
 | Translation | Original Author | Source |
 |-------------|----------------|--------|

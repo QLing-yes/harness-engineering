@@ -1,8 +1,8 @@
 中文 | [English](README.en.md)
 
 ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
-![Articles](https://img.shields.io/badge/articles-18-green)
-![Translations](https://img.shields.io/badge/translations-11-orange)
+![Articles](https://img.shields.io/badge/articles-19-green)
+![Translations](https://img.shields.io/badge/translations-12-orange)
 
 # Harness Engineering 学习指南
 
@@ -98,7 +98,7 @@ harness-engineering/
 ├── README.md              ← 你在这里
 ├── AGENTS.md              ← 仓库导航入口（给智能体看的）
 │
-├── concepts/              # Phase 1：概念笔记（7 篇）
+├── concepts/              # Phase 1：概念笔记（8 篇）
 │   ├── 00-overview.md     #   六大核心概念总览
 │   ├── 01-repo-as-...     #   仓库即记录系统
 │   ├── 02-mechanical-...  #   机械化执行
@@ -112,14 +112,14 @@ harness-engineering/
 ├── feedback/              # Phase 4：踩坑与迭代心得（1 篇）
 ├── works/                 # Phase 5：可展示的作品（11 篇翻译 + 1 篇原创）
 ├── prompts/               # 验证有效的提示词积累
-└── references/            # 外部资源索引（18 篇文章深度摘要）
+└── references/            # 外部资源索引（19 篇文章深度摘要）
 ```
 
 每个子目录都有自己的 `AGENTS.md`，说明该目录的用途和写作约定。这本身就是原文「渐进式披露」的实践。
 
 ## 🚀 学习路线
 
-- [x] **Phase 1：理解核心概念** — 7 篇概念笔记，覆盖 OpenAI 六大概念 + Fowler 控制论扩展
+- [x] **Phase 1：理解核心概念** — 8 篇概念笔记，覆盖 OpenAI 六大概念 + Fowler 控制论扩展 + Symphony 约束即产品
 - [x] **Phase 2：形成自己的观点** — 6 篇独立思考（持续中）
 - [x] **Phase 3：选一个小项目实践** — Ralph Demo 完成（321 秒，$0.31）
 - [x] **Phase 4：记录反馈迭代** — 1 篇（持续中）
@@ -127,11 +127,11 @@ harness-engineering/
 
 ## 📚 研究资料库
 
-跨 15 篇核心文章 + 3 篇延伸阅读，构建三条知识脉络：
+跨 16 篇核心文章 + 3 篇延伸阅读，构建三条知识脉络：
 
 | 脉络 | 覆盖 | 核心视角 |
 |------|------|---------|
-| AI 时代的 Harness Engineering | 15 篇 | OpenAI → Fowler → Anthropic → LangChain → Stanford |
+| AI 时代的 Harness Engineering | 16 篇 | OpenAI → Fowler → Anthropic → LangChain → Stanford |
 | 云原生 Harness.io | 3 篇 | CI/CD 平台架构（同名不同义的参照） |
 | 延伸阅读 | 3 篇 | Mitchell Hashimoto、Context Engineering、人机协作 |
 
@@ -140,7 +140,7 @@ harness-engineering/
 ## 📖 翻译作品
 
 <details>
-<summary><b>11 篇核心文章的中文翻译</b>（点击展开）</summary>
+<summary><b>12 篇核心文章的中文翻译</b>（点击展开）</summary>
 
 | 作品 | 原作者 | 来源 |
 |------|--------|------|
