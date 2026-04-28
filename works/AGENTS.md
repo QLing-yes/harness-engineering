@@ -25,6 +25,7 @@
 | [inside-the-scaffold-paper-translation.md](inside-the-scaffold-paper-translation.md) | Inside the Scaffold (源代码分类法) | Huawei / Benjamin Rombaut |
 | ⭐ [maganti-eight-years-building-ai-translation.md](maganti-eight-years-building-ai-translation.md) | Eight Years of Wanting | Lalit Maganti |
 | [langchain-continual-learning-translation.md](langchain-continual-learning-translation.md) | Continual Learning for AI Agents | LangChain / Harrison Chase |
+| [openai-codex-symphony-translation.md](openai-codex-symphony-translation.md) | An Open-Source Spec for Codex Orchestration: Symphony | OpenAI / Kotliarskyi, Zhu, Brock |
 
 ### 原创文章
 
