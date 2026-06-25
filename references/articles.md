@@ -862,3 +862,30 @@ Harness Engineering（AI 护栏）     Harness.io（交付管线）
   - self-referential 演化是 cross-article-insights 洞见 1 "Harness Gardening" 的活样本——README 直白记录"sync 命令悄悄删除配置块"的 4 次事故
   - 强制日文响应（CLAUDE.md 第 38 行）暴露了 harness 必带价值观锁定，对应洞见 7 的单一栽培风险
 - **关联：** OpenAI 原文（六大概念的全量产品化）、Fowler/Böckeler（2×2 矩阵的实证检验）、Anthropic 文章 #7（meta-harness 思想的 Claude Code 侧落地）
+
+---
+
+## 观察项 / 候选材料（不计入文章数）
+
+> 2026-05 调研中已抓取并翻译、但**暂不值得做成正式文章**的产品页 / README / 短 bliki / 发布稿。本段不参与 `### N.` 编号，不计入 30 篇文章总数。
+> 中文译文留在本地 `translate/`（gitignored）作阅读辅助；下表只记上游链接与定性，方便下次快速复看。
+> **去向标记：** 🔵 待实测后入 `tools/`（遵守 tools/「只收用过的工具」标准，未实测前不正式收录） ｜ ⚪ 长期观察 ｜ ⏭️ 暂存不收。
+
+| 候选 | 类型 | 去向 | 角度 / 为何只做观察项 | 原文 |
+|---|---|---|---|---|
+| Caliper | 工具 | 🔵 | 把 CLAUDE.md 自然语言约定编译成确定性检查；三层 enforcement，论点反哺概念 3/6。实测后可升级 `tools/` 或 `works/` | [getcaliper.dev](https://getcaliper.dev/) |
+| Context Mode | 工具 | 🔵 | "用代码思考"（让 LLM 写脚本统计而非读满上下文）+ FTS5/BM25 取回；90% 篇幅是安装矩阵 | [github](https://github.com/mksglu/context-mode) |
+| OpenSPDD | 工具 | 🔵 | SPDD 的 CLI 落地（REASONS Canvas + spdd-sync）；README 体裁，配合 #20 SPDD 看 | [github](https://github.com/gszhangwei/open-spdd) |
+| CocoIndex | 工具/基建 | ⚪ | 增量索引引擎（Rust + 声明式 Python）；与 agent 关系较远，偏通用 context 基建 | [github](https://github.com/cocoindex-io/cocoindex) |
+| grith | 工具 | ⚪ | syscall 级安全 Harness（<15ms 拦截/评分/决策）；落地页太薄，待其博客深度长文 | [grith.ai](https://grith.ai/) |
+| Running Codex safely | 文章 | ⚪ | OpenAI 官方·安全治理控制面；官宣口吻、无实测数据 | [openai](https://openai.com/zh-Hans-CN/index/running-codex-safely/) |
+| Codex on Windows 沙箱 | 文章 | ⚪ | 沙箱边界 Windows 平台实现；高度平台特定，与已收录 Anthropic 沙箱重复 | [openai](https://openai.com/index/building-codex-windows-sandbox/) |
+| LangSmith Sandboxes GA | 产品 | ⚪ | microVM 隔离论证（Shai-Hulud / n8n CVE 那节有料），其余是 GA 公告 | [langchain](https://www.langchain.com/blog/langsmith-sandboxes-generally-available) |
+| OpenAI WebSockets | 文章 | ⚪ | 运行时性能·传输层（把整次 agent 执行建模为单条长响应）；可迁移性中等 | [openai](https://openai.com/zh-Hans-CN/index/speeding-up-agentic-workflows-with-websockets/) |
+| Managed Deep Agents | 产品 | ⚪ | 托管 runtime 产业动态；private beta 发布稿，干货在 #22 / #27 | [langchain](https://www.langchain.com/blog/introducing-managed-deep-agents) |
+| Genie Tarpit | 随笔 | ⚪ | Kent Beck 的 Features×Futures 坐标（AI 落"凑合区"）；依赖 5 张配图、含赞助段 | [tidyfirst](https://tidyfirst.substack.com/p/genie-tarpit) |
+| Vibe Coding | bliki | ⚪ | Fowler 给 vibe coding 的权威定义锚点；可做术语引用 | [martinfowler](https://martinfowler.com/bliki/VibeCoding.html) |
+| Interrogatory LLM | bliki | ⚪ | 让 LLM 反向访谈人类生成上下文的 pattern；可做 `prompts/` 引用 | [martinfowler](https://martinfowler.com/bliki/InterrogatoryLLM.html) |
+| Google Antigravity | 发布稿 | ⏭️ | I/O 2026 开发者亮点；产品罗列，与已收录 Managed Agents 重复 | [blog.google](https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/) |
+
+> 三篇短 bliki / 随笔（Vibe Coding、Interrogatory LLM、Genie Tarpit）若日后要收，建议合并成一个「概念定义 / 上下文工程 pattern」小专题，别各开条目稀释精品信号。
